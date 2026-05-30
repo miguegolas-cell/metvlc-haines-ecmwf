@@ -48,6 +48,36 @@
       color: #e8f5ff;
     }
 
+    .controls {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+      background: #f6f9fb;
+      border-bottom: 1px solid #dfe8ee;
+    }
+
+    .controls button {
+      border: 0;
+      padding: 9px 16px;
+      border-radius: 10px;
+      background: #0b2f4f;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      transition: 0.2s ease;
+    }
+
+    .controls button:hover {
+      background: #14527d;
+    }
+
+    .controls button.active {
+      background: #ff6a2a;
+    }
+
     #map {
       width: 100%;
       height: 720px;
@@ -122,8 +152,31 @@
 
     <div class="header">
       <h1>Índice de Haines · ECMWF</h1>
-      <p>Haines alto · Estabilidad 700-500 hPa + sequedad 700 hPa · Comunitat Valenciana</p>
+      <p>Haines medio y alto · ECMWF Open Data · Comunitat Valenciana</p>
     </div>
+
+   <div class="controls">
+  <button id="btn-medio" class="active" onclick="cambiarTipoHaines('medio')">
+    Haines medio
+  </button>
+
+  <button id="btn-alto" onclick="cambiarTipoHaines('alto')">
+    Haines alto
+  </button>
+</div>
+
+<div id="fechaValidez" style="
+  background:#ffffff;
+  color:#0b2f4f;
+  text-align:center;
+  font-family:Arial, sans-serif;
+  font-size:15px;
+  font-weight:800;
+  padding:10px 15px;
+  border-bottom:1px solid #dfe8ee;
+">
+  Cargando fecha de validez...
+</div>
 
     <div id="map"></div>
 
@@ -148,6 +201,12 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
+    let geojsonData = null;
+    let metadataData = null;
+    let hainesLayer = null;
+    let cvLayer = null;
+    let tipoHainesActual = "medio";
+
     const map = L.map("map", {
       preferCanvas: true,
       zoomControl: true
@@ -186,35 +245,72 @@
       collapsed: false
     }).addTo(map);
 
-    function markerRadius(haines) {
-      if (haines >= 6) return 10;
-      if (haines === 5) return 9;
-      if (haines === 4) return 8;
+    function getHainesProps(props, tipo) {
+      if (tipo === "alto") {
+        return {
+          nombre: "Haines alto",
+          descripcion: "Estabilidad 700-500 hPa + sequedad 700 hPa",
+          valor: props.haines_alto,
+          nivel: props.haines_alto_nivel,
+          color: props.haines_alto_color,
+          A: props.alto_A_estabilidad,
+          B: props.alto_B_sequedad,
+          detalle: `
+            <b>T700:</b> ${props.T700_C} ºC<br>
+            <b>T500:</b> ${props.T500_C} ºC<br>
+            <b>HR700:</b> ${props.HR700} %<br>
+            <b>Td700:</b> ${props.Td700_C} ºC<br>
+            <b>Depresión 700:</b> ${props.depresion_700} ºC
+          `
+        };
+      }
+
+      return {
+        nombre: "Haines medio",
+        descripcion: "Estabilidad 850-700 hPa + sequedad 850 hPa",
+        valor: props.haines_medio,
+        nivel: props.haines_medio_nivel,
+        color: props.haines_medio_color,
+        A: props.medio_A_estabilidad,
+        B: props.medio_B_sequedad,
+        detalle: `
+          <b>T850:</b> ${props.T850_C} ºC<br>
+          <b>T700:</b> ${props.T700_C} ºC<br>
+          <b>HR850:</b> ${props.HR850} %<br>
+          <b>Td850:</b> ${props.Td850_C} ºC<br>
+          <b>Depresión 850:</b> ${props.depresion_850} ºC
+        `
+      };
+    }
+
+    function markerRadius(valor) {
+      if (valor >= 6) return 10;
+      if (valor === 5) return 9;
+      if (valor === 4) return 8;
       return 7;
     }
 
     function popupContent(props) {
+      const h = getHainesProps(props, tipoHainesActual);
+
       return `
-        <div class="popup-title">Índice de Haines ECMWF</div>
-        <b>Haines:</b> <span class="popup-haines" style="color:${props.color};">${props.haines}</span><br>
-        <b>Nivel:</b> ${props.nivel}<br>
-        <b>A · Estabilidad 700-500:</b> ${props.A_estabilidad}<br>
-        <b>B · Sequedad 700 hPa:</b> ${props.B_sequedad}<br>
+        <div class="popup-title">${h.nombre} ECMWF</div>
+        <b>Índice:</b> <span class="popup-haines" style="color:${h.color};">${h.valor}</span><br>
+        <b>Nivel:</b> ${h.nivel}<br>
+        <b>A · Estabilidad:</b> ${h.A}<br>
+        <b>B · Sequedad:</b> ${h.B}<br>
         <hr>
-        <b>T700:</b> ${props.T700_C} ºC<br>
-        <b>T500:</b> ${props.T500_C} ºC<br>
-        <b>HR700:</b> ${props.HR700} %<br>
-        <b>Td700:</b> ${props.Td700_C} ºC<br>
-        <b>Depresión 700:</b> ${props.depresion_700} ºC
+        ${h.detalle}
       `;
     }
 
     function styleFeature(feature) {
-      const p = feature.properties;
+      const props = feature.properties;
+      const h = getHainesProps(props, tipoHainesActual);
 
       return {
-        radius: markerRadius(p.haines),
-        fillColor: p.color || "#666666",
+        radius: markerRadius(h.valor),
+        fillColor: h.color || "#666666",
         color: "#1f2d36",
         weight: 1.2,
         opacity: 1,
@@ -237,6 +333,63 @@
       });
     }
 
+    function actualizarBotones() {
+      document.getElementById("btn-medio").classList.remove("active");
+      document.getElementById("btn-alto").classList.remove("active");
+
+      if (tipoHainesActual === "medio") {
+        document.getElementById("btn-medio").classList.add("active");
+      } else {
+        document.getElementById("btn-alto").classList.add("active");
+      }
+    }
+
+    function dibujarHaines() {
+      if (!geojsonData) return;
+
+      if (hainesLayer) {
+        map.removeLayer(hainesLayer);
+      }
+
+      hainesLayer = L.geoJSON(geojsonData, {
+        pointToLayer: function(feature, latlng) {
+          return L.circleMarker(latlng, styleFeature(feature));
+        },
+        onEachFeature: function(feature, lyr) {
+          lyr.bindPopup(popupContent(feature.properties));
+        }
+      }).addTo(map);
+
+      actualizarMetadatos();
+    }
+
+    function cambiarTipoHaines(tipo) {
+      tipoHainesActual = tipo;
+      actualizarBotones();
+      dibujarHaines();
+    }
+
+    function actualizarMetadatos() {
+      if (!metadataData) return;
+
+      const generado = formatMadridTime(metadataData.generado_utc);
+      const validTime = metadataData.valid_time ? formatMadridTime(metadataData.valid_time) : "—";
+
+      const descripcion = tipoHainesActual === "alto"
+        ? "Haines alto: estabilidad 700-500 hPa y sequedad a 700 hPa."
+        : "Haines medio: estabilidad 850-700 hPa y sequedad a 850 hPa.";
+
+      document.getElementById("metadata").innerHTML = `
+        <b>Fuente:</b> ECMWF Open Data ·
+        <b>Tipo mostrado:</b> ${tipoHainesActual === "alto" ? "Haines alto" : "Haines medio"} ·
+        <b>Puntos:</b> ${metadataData.puntos || geojsonData.features.length}<br>
+        <b>Válido para:</b> ${validTime} hora peninsular ·
+        <b>Generado:</b> ${generado} hora peninsular<br>
+        ${descripcion} Producto calculado para la pasada 00 UTC, alcance +15 h. 
+        El Haines bajo oficial no se muestra porque requiere 950 hPa.
+      `;
+    }
+
     Promise.all([
       fetch("haines.geojson?v=" + new Date().getTime()).then(response => {
         if (!response.ok) throw new Error("No se pudo cargar haines.geojson");
@@ -252,16 +405,10 @@
       })
     ])
     .then(([geojson, metadata, cv]) => {
-      const hainesLayer = L.geoJSON(geojson, {
-        pointToLayer: function(feature, latlng) {
-          return L.circleMarker(latlng, styleFeature(feature));
-        },
-        onEachFeature: function(feature, lyr) {
-          lyr.bindPopup(popupContent(feature.properties));
-        }
-      }).addTo(map);
+      geojsonData = geojson;
+      metadataData = metadata;
 
-      const cvLayer = L.geoJSON(cv, {
+      cvLayer = L.geoJSON(cv, {
         style: {
           color: "#0b2f4f",
           weight: 2,
@@ -270,26 +417,17 @@
         }
       }).addTo(map);
 
+      dibujarHaines();
+
       if (cvLayer.getBounds().isValid()) {
         map.fitBounds(cvLayer.getBounds(), {
           padding: [25, 25]
         });
-      } else if (hainesLayer.getBounds().isValid()) {
+      } else if (hainesLayer && hainesLayer.getBounds().isValid()) {
         map.fitBounds(hainesLayer.getBounds(), {
           padding: [25, 25]
         });
       }
-
-      const generado = formatMadridTime(metadata.generado_utc);
-      const validTime = metadata.valid_time ? formatMadridTime(metadata.valid_time) : "—";
-
-      document.getElementById("metadata").innerHTML = `
-        <b>Fuente:</b> ECMWF Open Data ·
-        <b>Puntos:</b> ${metadata.puntos || geojson.features.length}<br>
-        <b>Válido para:</b> ${validTime} hora peninsular ·
-        <b>Generado:</b> ${generado} hora peninsular<br>
-        Cálculo experimental del Haines alto a partir de temperatura 700-500 hPa y humedad relativa a 700 hPa.
-      `;
     })
     .catch(error => {
       console.error(error);
