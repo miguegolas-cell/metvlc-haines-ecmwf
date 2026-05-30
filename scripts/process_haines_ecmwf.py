@@ -185,7 +185,7 @@ def main():
 
     levels = [int(x) for x in ds["isobaricInhPa"].values]
 
-    needed = [950, 850, 700, 500]
+    needed = [850, 700, 500]
 
     for level in needed:
         if level not in levels:
