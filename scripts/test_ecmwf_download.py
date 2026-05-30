@@ -15,7 +15,7 @@ client.retrieve(
     step=0,
     type="fc",
     levtype="pl",
-    levelist=[850, 700, 500],
+    levelist=[950, 850, 700, 500]
     param=["t", "r"],
     target=str(target),
 )
