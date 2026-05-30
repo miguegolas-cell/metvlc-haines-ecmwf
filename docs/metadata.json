@@ -1,9 +1,9 @@
 {
   "producto": "Índice de Haines ECMWF",
   "fuente": "ECMWF Open Data",
-  "tipo": "Haines alto: estabilidad 700-500 hPa + sequedad 700 hPa",
+  "tipo": "Haines medio y alto. Haines bajo no disponible al faltar 950 hPa.",
   "archivo": "data/test_ecmwf_haines.grib2",
-  "generado_utc": "2026-05-30T15:23:19.199284+00:00",
+  "generado_utc": "2026-05-30T15:48:30.228503+00:00",
   "valid_time": "2026-05-30T00:00:00.000000000",
   "puntos": 38,
   "variables": [
@@ -11,8 +11,9 @@
     "r"
   ],
   "niveles": [
+    850,
     700,
     500
   ],
-  "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF."
+  "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF. El Haines bajo oficial requiere 950 hPa, nivel no disponible en este GRIB."
 }
