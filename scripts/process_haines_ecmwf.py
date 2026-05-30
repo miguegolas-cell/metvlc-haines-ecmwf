@@ -19,9 +19,6 @@ OUT_METADATA = DOCS_DIR / "metadata.json"
 
 
 def dewpoint_from_temp_rh(temp_c, rh):
-    """
-    Calcula punto de rocío en ºC a partir de temperatura ºC y HR %.
-    """
     rh = max(1.0, min(100.0, rh))
     a = 17.27
     b = 237.7
@@ -29,41 +26,7 @@ def dewpoint_from_temp_rh(temp_c, rh):
     return (b * alpha) / (a - alpha)
 
 
-def haines_bajo_A(t950_c, t850_c):
-    """
-    Haines bajo:
-    A = T950 - T850
-    """
-    diff = t950_c - t850_c
-
-    if diff <= 3:
-        return 1
-    elif diff <= 7:
-        return 2
-    else:
-        return 3
-
-
-def haines_bajo_B(t850_c, td850_c):
-    """
-    Haines bajo:
-    B = T850 - Td850
-    """
-    depression = t850_c - td850_c
-
-    if depression <= 5:
-        return 1
-    elif depression <= 9:
-        return 2
-    else:
-        return 3
-
-
 def haines_medio_A(t850_c, t700_c):
-    """
-    Haines medio:
-    A = T850 - T700
-    """
     diff = t850_c - t700_c
 
     if diff <= 5:
@@ -75,10 +38,6 @@ def haines_medio_A(t850_c, t700_c):
 
 
 def haines_medio_B(t850_c, td850_c):
-    """
-    Haines medio:
-    B = T850 - Td850
-    """
     depression = t850_c - td850_c
 
     if depression <= 5:
@@ -90,10 +49,6 @@ def haines_medio_B(t850_c, td850_c):
 
 
 def haines_alto_A(t700_c, t500_c):
-    """
-    Haines alto:
-    A = T700 - T500
-    """
     diff = t700_c - t500_c
 
     if diff <= 17:
@@ -105,10 +60,6 @@ def haines_alto_A(t700_c, t500_c):
 
 
 def haines_alto_B(t700_c, td700_c):
-    """
-    Haines alto:
-    B = T700 - Td700
-    """
     depression = t700_c - td700_c
 
     if depression <= 14:
@@ -196,7 +147,6 @@ def main():
 
     cv_geoms = load_cv_geometry()
 
-    t950 = get_level(ds, "t", 950)
     t850 = get_level(ds, "t", 850)
     t700 = get_level(ds, "t", 700)
     t500 = get_level(ds, "t", 500)
@@ -217,7 +167,6 @@ def main():
             if not point_inside_any(lon_f, lat_f, cv_geoms):
                 continue
 
-            t950_c = float(t950.values[i, j]) - 273.15
             t850_c = float(t850.values[i, j]) - 273.15
             t700_c = float(t700.values[i, j]) - 273.15
             t500_c = float(t500.values[i, j]) - 273.15
@@ -225,17 +174,13 @@ def main():
             rh850 = float(r850.values[i, j])
             rh700 = float(r700.values[i, j])
 
-            values = [t950_c, t850_c, t700_c, t500_c, rh850, rh700]
+            values = [t850_c, t700_c, t500_c, rh850, rh700]
 
             if any(np.isnan(v) for v in values):
                 continue
 
             td850_c = dewpoint_from_temp_rh(t850_c, rh850)
             td700_c = dewpoint_from_temp_rh(t700_c, rh700)
-
-            bajo_A = haines_bajo_A(t950_c, t850_c)
-            bajo_B = haines_bajo_B(t850_c, td850_c)
-            haines_bajo = bajo_A + bajo_B
 
             medio_A = haines_medio_A(t850_c, t700_c)
             medio_B = haines_medio_B(t850_c, td850_c)
@@ -245,8 +190,8 @@ def main():
             alto_B = haines_alto_B(t700_c, td700_c)
             haines_alto = alto_A + alto_B
 
-            # Valor principal por defecto para mantener compatible el visor actual
-            haines_principal = haines_alto
+            # Valor principal: Haines medio
+            haines_principal = haines_medio
 
             features.append({
                 "type": "Feature",
@@ -259,11 +204,9 @@ def main():
                     "nivel": haines_level(haines_principal),
                     "color": haines_color(haines_principal),
 
-                    "haines_bajo": int(haines_bajo),
-                    "haines_bajo_nivel": haines_level(haines_bajo),
-                    "haines_bajo_color": haines_color(haines_bajo),
-                    "bajo_A_estabilidad": int(bajo_A),
-                    "bajo_B_sequedad": int(bajo_B),
+                    "haines_bajo": None,
+                    "haines_bajo_nivel": "No disponible",
+                    "haines_bajo_color": "#999999",
 
                     "haines_medio": int(haines_medio),
                     "haines_medio_nivel": haines_level(haines_medio),
@@ -277,7 +220,6 @@ def main():
                     "alto_A_estabilidad": int(alto_A),
                     "alto_B_sequedad": int(alto_B),
 
-                    "T950_C": round(t950_c, 1),
                     "T850_C": round(t850_c, 1),
                     "T700_C": round(t700_c, 1),
                     "T500_C": round(t500_c, 1),
@@ -311,14 +253,14 @@ def main():
     metadata = {
         "producto": "Índice de Haines ECMWF",
         "fuente": "ECMWF Open Data",
-        "tipo": "Haines bajo, medio y alto",
+        "tipo": "Haines medio y alto. Haines bajo no disponible al faltar 950 hPa.",
         "archivo": str(GRIB_FILE),
         "generado_utc": datetime.now(timezone.utc).isoformat(),
         "valid_time": valid_time,
         "puntos": len(features),
         "variables": ["t", "r"],
-        "niveles": [950, 850, 700, 500],
-        "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF."
+        "niveles": [850, 700, 500],
+        "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF. El Haines bajo oficial requiere 950 hPa, nivel no disponible en este GRIB."
     }
 
     OUT_METADATA.write_text(
