@@ -1,0 +1,841 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          40.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -13.0,
+        "HR700": 58.0,
+        "Td700_C": -1.0,
+        "depresion_700": 7.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          40.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.9,
+        "HR700": 59.0,
+        "Td700_C": -0.9,
+        "depresion_700": 7.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.25,
+          40.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.5,
+        "T500_C": -13.0,
+        "HR700": 61.0,
+        "Td700_C": -0.5,
+        "depresion_700": 7.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5,
+          40.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.4,
+        "T500_C": -13.0,
+        "HR700": 63.0,
+        "Td700_C": -0.2,
+        "depresion_700": 6.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          40.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.9,
+        "HR700": 60.0,
+        "Td700_C": -0.6,
+        "depresion_700": 7.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          40.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.8,
+        "HR700": 58.0,
+        "Td700_C": -1.1,
+        "depresion_700": 7.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.25,
+          40.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.5,
+        "T500_C": -13.0,
+        "HR700": 60.0,
+        "Td700_C": -0.8,
+        "depresion_700": 7.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.2,
+        "T500_C": -12.2,
+        "HR700": 52.0,
+        "Td700_C": -2.1,
+        "depresion_700": 9.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.0,
+        "T500_C": -12.7,
+        "HR700": 51.0,
+        "Td700_C": -2.5,
+        "depresion_700": 9.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.9,
+        "T500_C": -12.9,
+        "HR700": 53.0,
+        "Td700_C": -2.1,
+        "depresion_700": 9.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.8,
+        "HR700": 59.0,
+        "Td700_C": -0.8,
+        "depresion_700": 7.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.7,
+        "HR700": 58.0,
+        "Td700_C": -1.0,
+        "depresion_700": 7.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.2,
+        "T500_C": -12.4,
+        "HR700": 52.0,
+        "Td700_C": -2.1,
+        "depresion_700": 9.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.1,
+        "T500_C": -12.6,
+        "HR700": 53.0,
+        "Td700_C": -1.8,
+        "depresion_700": 8.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.9,
+        "T500_C": -12.7,
+        "HR700": 53.0,
+        "Td700_C": -2.0,
+        "depresion_700": 8.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.8,
+        "T500_C": -12.9,
+        "HR700": 52.0,
+        "Td700_C": -2.5,
+        "depresion_700": 9.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.9,
+        "HR700": 55.0,
+        "Td700_C": -1.7,
+        "depresion_700": 8.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.2,
+        "T500_C": -12.6,
+        "HR700": 50.0,
+        "Td700_C": -2.6,
+        "depresion_700": 9.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 7.0,
+        "T500_C": -12.8,
+        "HR700": 50.0,
+        "Td700_C": -2.7,
+        "depresion_700": 9.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.7,
+        "HR700": 53.0,
+        "Td700_C": -2.3,
+        "depresion_700": 9.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.8,
+        "HR700": 52.0,
+        "Td700_C": -2.4,
+        "depresion_700": 9.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.9,
+        "T500_C": -12.8,
+        "HR700": 51.0,
+        "Td700_C": -2.6,
+        "depresion_700": 9.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.7,
+        "HR700": 51.0,
+        "Td700_C": -2.7,
+        "depresion_700": 9.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.8,
+        "HR700": 52.0,
+        "Td700_C": -2.4,
+        "depresion_700": 9.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.9,
+        "T500_C": -13.0,
+        "HR700": 54.0,
+        "Td700_C": -1.9,
+        "depresion_700": 8.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.8,
+        "T500_C": -12.9,
+        "HR700": 51.0,
+        "Td700_C": -2.7,
+        "depresion_700": 9.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.8,
+        "T500_C": -12.9,
+        "HR700": 52.0,
+        "Td700_C": -2.4,
+        "depresion_700": 9.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.9,
+        "HR700": 54.0,
+        "Td700_C": -2.0,
+        "depresion_700": 8.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.9,
+        "HR700": 52.0,
+        "Td700_C": -2.5,
+        "depresion_700": 9.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.7,
+        "T500_C": -12.9,
+        "HR700": 54.0,
+        "Td700_C": -2.1,
+        "depresion_700": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.4,
+        "T500_C": -12.8,
+        "HR700": 56.0,
+        "Td700_C": -1.8,
+        "depresion_700": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.1,
+        "T500_C": -12.8,
+        "HR700": 57.0,
+        "Td700_C": -1.8,
+        "depresion_700": 7.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          38.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.8,
+        "T500_C": -12.8,
+        "HR700": 52.0,
+        "Td700_C": -2.5,
+        "depresion_700": 9.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          38.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.6,
+        "HR700": 52.0,
+        "Td700_C": -2.5,
+        "depresion_700": 9.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          38.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.5,
+        "T500_C": -12.7,
+        "HR700": 54.0,
+        "Td700_C": -2.2,
+        "depresion_700": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          38.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.2,
+        "T500_C": -12.7,
+        "HR700": 57.0,
+        "Td700_C": -1.7,
+        "depresion_700": 8.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          38.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.4,
+        "HR700": 51.0,
+        "Td700_C": -2.8,
+        "depresion_700": 9.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          38.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "A_estabilidad": 2,
+        "B_sequedad": 1,
+        "T700_C": 6.6,
+        "T500_C": -12.3,
+        "HR700": 51.0,
+        "Td700_C": -2.8,
+        "depresion_700": 9.4
+      }
+    }
+  ]
+}
