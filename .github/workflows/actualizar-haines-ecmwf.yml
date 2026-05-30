@@ -1,0 +1,47 @@
+name: Actualizar Haines ECMWF
+
+on:
+  schedule:
+    # Una vez al día. Descarga la pasada 00 UTC para step +15 h.
+    # 07:30 UTC suele dar margen para que la pasada esté disponible.
+    - cron: "30 7 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  actualizar-haines-ecmwf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Descargar GRIB ECMWF step 15
+        run: python scripts/test_ecmwf_download.py
+
+      - name: Procesar Haines ECMWF
+        run: python scripts/process_haines_ecmwf.py
+
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/test_ecmwf_haines.grib2 docs/haines.geojson docs/metadata.json
+          git commit -m "Actualiza Haines ECMWF step 15" || echo "Sin cambios que guardar"
+          git push
