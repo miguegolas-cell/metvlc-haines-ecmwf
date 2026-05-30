@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>MetVlc · Haines ECMWF</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 
   <style>
     body {
@@ -12,44 +19,284 @@
       color: #263238;
     }
 
-    .contenedor {
-      max-width: 1100px;
-      margin: 40px auto;
+    .page {
+      max-width: 1200px;
+      margin: 25px auto;
       background: #ffffff;
       border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0b2f4f 0%, #0b6fa4 65%, #ff6a2a 100%);
+      color: white;
+      padding: 18px 24px;
       text-align: center;
     }
 
-    h1 {
-      margin: 0 0 10px;
-      color: #0b2f4f;
+    .header h1 {
+      margin: 0;
+      font-size: 25px;
+      letter-spacing: 0.4px;
       text-transform: uppercase;
     }
 
-    .aviso {
-      margin-top: 20px;
-      padding: 16px;
-      border-radius: 10px;
-      background: #eef6fb;
-      border-left: 6px solid #0b6fa4;
-      text-align: left;
-      line-height: 1.6;
+    .header p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      color: #e8f5ff;
+    }
+
+    #map {
+      width: 100%;
+      height: 720px;
+      background: #dce8ee;
+    }
+
+    .legend {
+      padding: 14px 18px;
+      background: #ffffff;
+      border-top: 1px solid #dfe8ee;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .legend span {
+      display: inline-block;
+      width: 18px;
+      height: 14px;
+      margin-right: 6px;
+      vertical-align: middle;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 3px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #51636d;
+      padding: 0 18px 18px;
+      background: #ffffff;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .popup-title {
+      font-weight: 800;
+      color: #0b2f4f;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .popup-haines {
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .leaflet-control-layers {
+      border-radius: 10px !important;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18) !important;
+      font-size: 13px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .header h1 {
+        font-size: 21px;
+      }
+
+      #map {
+        height: 560px;
+      }
+
+      .legend {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="contenedor">
-    <h1>Índice de Haines · ECMWF</h1>
-    <p>Visor en preparación con datos ECMWF Open Data.</p>
+  <div class="page">
 
-    <div class="aviso">
-      Si ves esta página publicada desde GitHub Pages, el primer paso está correcto.
+    <div class="header">
+      <h1>Índice de Haines · ECMWF</h1>
+      <p>Haines alto · Estabilidad 700-500 hPa + sequedad 700 hPa · Comunitat Valenciana</p>
     </div>
+
+    <div id="map"></div>
+
+    <div class="legend">
+      <b>Leyenda Haines:</b>
+      &nbsp;&nbsp;
+      <span style="background:#2b83ba;"></span> Bajo 2-3
+      &nbsp;&nbsp;
+      <span style="background:#abdda4;"></span> Moderado 4
+      &nbsp;&nbsp;
+      <span style="background:#fdae61;"></span> Alto 5
+      &nbsp;&nbsp;
+      <span style="background:#d7191c;"></span> Muy alto 6
+    </div>
+
+    <div class="meta" id="metadata">
+      Cargando datos...
+    </div>
+
   </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+    const map = L.map("map", {
+      preferCanvas: true,
+      zoomControl: true
+    }).setView([39.35, -0.45], 8);
+
+    const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap"
+    });
+
+    const esriTopo = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+      {
+        maxZoom: 18,
+        attribution: "Tiles &copy; Esri"
+      }
+    );
+
+    const openTopo = L.tileLayer(
+      "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+      {
+        maxZoom: 17,
+        attribution: "Map data: &copy; OpenStreetMap contributors, SRTM | Map style: &copy; OpenTopoMap"
+      }
+    );
+
+    esriTopo.addTo(map);
+
+    const baseMaps = {
+      "Relieve · Esri": esriTopo,
+      "Topográfico · OpenTopo": openTopo,
+      "Calles · OSM": osm
+    };
+
+    L.control.layers(baseMaps, null, {
+      collapsed: false
+    }).addTo(map);
+
+    function markerRadius(haines) {
+      if (haines >= 6) return 10;
+      if (haines === 5) return 9;
+      if (haines === 4) return 8;
+      return 7;
+    }
+
+    function popupContent(props) {
+      return `
+        <div class="popup-title">Índice de Haines ECMWF</div>
+        <b>Haines:</b> <span class="popup-haines" style="color:${props.color};">${props.haines}</span><br>
+        <b>Nivel:</b> ${props.nivel}<br>
+        <b>A · Estabilidad 700-500:</b> ${props.A_estabilidad}<br>
+        <b>B · Sequedad 700 hPa:</b> ${props.B_sequedad}<br>
+        <hr>
+        <b>T700:</b> ${props.T700_C} ºC<br>
+        <b>T500:</b> ${props.T500_C} ºC<br>
+        <b>HR700:</b> ${props.HR700} %<br>
+        <b>Td700:</b> ${props.Td700_C} ºC<br>
+        <b>Depresión 700:</b> ${props.depresion_700} ºC
+      `;
+    }
+
+    function styleFeature(feature) {
+      const p = feature.properties;
+
+      return {
+        radius: markerRadius(p.haines),
+        fillColor: p.color || "#666666",
+        color: "#1f2d36",
+        weight: 1.2,
+        opacity: 1,
+        fillOpacity: 0.85
+      };
+    }
+
+    function formatMadridTime(isoString) {
+      if (!isoString) return "—";
+
+      const fecha = new Date(isoString);
+
+      return fecha.toLocaleString("es-ES", {
+        timeZone: "Europe/Madrid",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+    }
+
+    Promise.all([
+      fetch("haines.geojson?v=" + new Date().getTime()).then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar haines.geojson");
+        return response.json();
+      }),
+      fetch("metadata.json?v=" + new Date().getTime()).then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar metadata.json");
+        return response.json();
+      }),
+      fetch("cv.geojson?v=" + new Date().getTime()).then(response => {
+        if (!response.ok) throw new Error("No se pudo cargar cv.geojson");
+        return response.json();
+      })
+    ])
+    .then(([geojson, metadata, cv]) => {
+      const hainesLayer = L.geoJSON(geojson, {
+        pointToLayer: function(feature, latlng) {
+          return L.circleMarker(latlng, styleFeature(feature));
+        },
+        onEachFeature: function(feature, lyr) {
+          lyr.bindPopup(popupContent(feature.properties));
+        }
+      }).addTo(map);
+
+      const cvLayer = L.geoJSON(cv, {
+        style: {
+          color: "#0b2f4f",
+          weight: 2,
+          fill: false,
+          opacity: 1
+        }
+      }).addTo(map);
+
+      if (cvLayer.getBounds().isValid()) {
+        map.fitBounds(cvLayer.getBounds(), {
+          padding: [25, 25]
+        });
+      } else if (hainesLayer.getBounds().isValid()) {
+        map.fitBounds(hainesLayer.getBounds(), {
+          padding: [25, 25]
+        });
+      }
+
+      const generado = formatMadridTime(metadata.generado_utc);
+      const validTime = metadata.valid_time ? formatMadridTime(metadata.valid_time) : "—";
+
+      document.getElementById("metadata").innerHTML = `
+        <b>Fuente:</b> ECMWF Open Data ·
+        <b>Puntos:</b> ${metadata.puntos || geojson.features.length}<br>
+        <b>Válido para:</b> ${validTime} hora peninsular ·
+        <b>Generado:</b> ${generado} hora peninsular<br>
+        Cálculo experimental del Haines alto a partir de temperatura 700-500 hPa y humedad relativa a 700 hPa.
+      `;
+    })
+    .catch(error => {
+      console.error(error);
+      document.getElementById("metadata").innerHTML =
+        "Error al cargar los datos Haines ECMWF. Revisa haines.geojson, metadata.json y cv.geojson.";
+    });
+  </script>
 
 </body>
 </html>
