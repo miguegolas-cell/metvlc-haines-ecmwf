@@ -374,6 +374,9 @@
 
       const generado = formatMadridTime(metadataData.generado_utc);
       const validTime = metadataData.valid_time ? formatMadridTime(metadataData.valid_time) : "—";
+      document.getElementById("fechaValidez").innerHTML = `
+  Válido para: ${validTime} hora peninsular
+`;
 
       const descripcion = tipoHainesActual === "alto"
         ? "Haines alto: estabilidad 700-500 hPa y sequedad a 700 hPa."
