@@ -206,6 +206,7 @@
     let hainesLayer = null;
     let cvLayer = null;
     let tipoHainesActual = "medio";
+    const GRID_STEP = 0.25;
 
     const map = L.map("map", {
       preferCanvas: true,
@@ -317,7 +318,14 @@
         fillOpacity: 0.85
       };
     }
+function getCellBounds(lat, lon) {
+  const half = GRID_STEP / 2;
 
+  return [
+    [lat - half, lon - half],
+    [lat + half, lon + half]
+  ];
+}
     function formatMadridTime(isoString) {
       if (!isoString) return "—";
 
@@ -344,24 +352,36 @@
       }
     }
 
-    function dibujarHaines() {
-      if (!geojsonData) return;
+   function dibujarHaines() {
+  if (!geojsonData) return;
 
-      if (hainesLayer) {
-        map.removeLayer(hainesLayer);
-      }
+  if (hainesLayer) {
+    map.removeLayer(hainesLayer);
+  }
 
-      hainesLayer = L.geoJSON(geojsonData, {
-        pointToLayer: function(feature, latlng) {
-          return L.circleMarker(latlng, styleFeature(feature));
-        },
-        onEachFeature: function(feature, lyr) {
-          lyr.bindPopup(popupContent(feature.properties));
-        }
-      }).addTo(map);
+  hainesLayer = L.layerGroup();
 
-      actualizarMetadatos();
-    }
+  geojsonData.features.forEach(feature => {
+    const coords = feature.geometry.coordinates;
+    const lon = coords[0];
+    const lat = coords[1];
+    const props = feature.properties;
+    const h = getHainesProps(props, tipoHainesActual);
+
+    const rect = L.rectangle(getCellBounds(lat, lon), {
+      stroke: false,
+      fillColor: h.color || "#666666",
+      fillOpacity: 0.65
+    });
+
+    rect.bindPopup(popupContent(props));
+    rect.addTo(hainesLayer);
+  });
+
+  hainesLayer.addTo(map);
+
+  actualizarMetadatos();
+}
 
     function cambiarTipoHaines(tipo) {
       tipoHainesActual = tipo;
