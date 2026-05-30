@@ -11,10 +11,10 @@ client = Client(source="ecmwf")
 client.retrieve(
     date=0,
     time=0,
-    step=0,
+    step=15,
     type="fc",
     levtype="pl",
-    levelist=[950, 850, 700, 500],
+    levelist=[850, 700, 500],
     param=["t", "r"],
     target=str(target),
 )
