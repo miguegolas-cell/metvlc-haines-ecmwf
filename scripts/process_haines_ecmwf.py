@@ -260,7 +260,7 @@ def main():
         "puntos": len(features),
         "variables": ["t", "r"],
         "niveles": [850, 700, 500],
-        "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF. El Haines bajo oficial requiere 950 hPa, nivel no disponible en este GRIB."
+        "nota": "Cálculo experimental a partir de temperatura y humedad relativa ECMWF. Producto calculado para step +15 h de la pasada 00 UTC. El Haines bajo oficial requiere 950 hPa, nivel no disponible en este GRIB."
     }
 
     OUT_METADATA.write_text(
