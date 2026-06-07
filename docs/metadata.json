@@ -3,8 +3,8 @@
   "fuente": "ECMWF Open Data",
   "tipo": "Haines medio y alto. Haines bajo no disponible al faltar 950 hPa.",
   "archivo": "data/test_ecmwf_haines.grib2",
-  "generado_utc": "2026-06-06T12:04:56.257909+00:00",
-  "valid_time": "2026-06-06T15:00:00.000000000",
+  "generado_utc": "2026-06-07T12:27:16.397923+00:00",
+  "valid_time": "2026-06-07T15:00:00.000000000",
   "puntos": 38,
   "variables": [
     "t",
