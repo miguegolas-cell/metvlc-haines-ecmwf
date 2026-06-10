@@ -11,228 +11,6 @@
         ]
       },
       "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 15.5,
-        "T700_C": 6.8,
-        "T500_C": -10.9,
-        "HR850": 77.0,
-        "HR700": 65.0,
-        "Td850_C": 11.4,
-        "Td700_C": 0.7,
-        "depresion_850": 4.1,
-        "depresion_700": 6.1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          40.5
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.2,
-        "T700_C": 7.0,
-        "T500_C": -11.0,
-        "HR850": 92.0,
-        "HR700": 61.0,
-        "Td850_C": 11.9,
-        "Td700_C": -0.0,
-        "depresion_850": 1.2,
-        "depresion_700": 7.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.25,
-          40.5
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.8,
-        "T700_C": 6.5,
-        "T500_C": -10.7,
-        "HR850": 82.0,
-        "HR700": 62.0,
-        "Td850_C": 10.8,
-        "Td700_C": -0.2,
-        "depresion_850": 3.0,
-        "depresion_700": 6.7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.5,
-          40.5
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 14.9,
-        "T700_C": 6.2,
-        "T500_C": -10.6,
-        "HR850": 69.0,
-        "HR700": 62.0,
-        "Td850_C": 9.2,
-        "Td700_C": -0.5,
-        "depresion_850": 5.7,
-        "depresion_700": 6.7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.25,
-          40.25
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.8,
-        "T700_C": 7.1,
-        "T500_C": -10.5,
-        "HR850": 86.0,
-        "HR700": 53.0,
-        "Td850_C": 11.6,
-        "Td700_C": -1.8,
-        "depresion_850": 2.3,
-        "depresion_700": 8.8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.0,
-          40.25
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.5,
-        "T700_C": 6.6,
-        "T500_C": -10.4,
-        "HR850": 84.0,
-        "HR700": 56.0,
-        "Td850_C": 10.9,
-        "Td700_C": -1.4,
-        "depresion_850": 2.6,
-        "depresion_700": 8.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.25,
-          40.25
-        ]
-      },
-      "properties": {
         "haines": 4,
         "nivel": "Moderado",
         "color": "#abdda4",
@@ -250,162 +28,14 @@
         "alto_A_estabilidad": 1,
         "alto_B_sequedad": 1,
         "T850_C": 14.6,
-        "T700_C": 6.4,
-        "T500_C": -10.4,
-        "HR850": 69.0,
-        "HR700": 55.0,
-        "Td850_C": 9.1,
-        "Td700_C": -1.9,
-        "depresion_850": 5.6,
-        "depresion_700": 8.3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.25,
-          40.0
-        ]
-      },
-      "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 2,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 17.8,
-        "T700_C": 6.8,
-        "T500_C": -10.4,
-        "HR850": 62.0,
-        "HR700": 55.0,
-        "Td850_C": 10.4,
-        "Td700_C": -1.5,
+        "T700_C": 5.5,
+        "T500_C": -10.6,
+        "HR850": 61.0,
+        "HR700": 49.0,
+        "Td850_C": 7.1,
+        "Td700_C": -4.4,
         "depresion_850": 7.4,
-        "depresion_700": 8.3
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          40.0
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.4,
-        "T700_C": 6.8,
-        "T500_C": -10.2,
-        "HR850": 69.0,
-        "HR700": 52.0,
-        "Td850_C": 10.7,
-        "Td700_C": -2.3,
-        "depresion_850": 5.6,
-        "depresion_700": 9.2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.5,
-          40.0
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.6,
-        "T700_C": 7.4,
-        "T500_C": -10.4,
-        "HR850": 88.0,
-        "HR700": 42.0,
-        "Td850_C": 11.6,
-        "Td700_C": -4.7,
-        "depresion_850": 2.0,
-        "depresion_700": 12.1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.25,
-          40.0
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.2,
-        "T700_C": 7.0,
-        "T500_C": -10.4,
-        "HR850": 86.0,
-        "HR700": 46.0,
-        "Td850_C": 10.9,
-        "Td700_C": -3.8,
-        "depresion_850": 2.3,
-        "depresion_700": 10.8
+        "depresion_700": 9.9
       }
     },
     {
@@ -414,7 +44,7 @@
         "type": "Point",
         "coordinates": [
           0.0,
-          40.0
+          40.5
         ]
       },
       "properties": {
@@ -429,538 +59,20 @@
         "haines_medio_color": "#abdda4",
         "medio_A_estabilidad": 2,
         "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 14.7,
-        "T700_C": 6.5,
-        "T500_C": -10.1,
-        "HR850": 70.0,
-        "HR700": 53.0,
-        "Td850_C": 9.3,
-        "Td700_C": -2.4,
-        "depresion_850": 5.4,
-        "depresion_700": 8.9
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.25,
-          39.75
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
         "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.7,
-        "T700_C": 7.4,
-        "T500_C": -10.2,
-        "HR850": 69.0,
-        "HR700": 41.0,
-        "Td850_C": 11.1,
-        "Td700_C": -4.9,
-        "depresion_850": 5.7,
-        "depresion_700": 12.2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.0,
-          39.75
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 15.3,
-        "T700_C": 7.3,
-        "T500_C": -10.2,
-        "HR850": 74.0,
-        "HR700": 40.0,
-        "Td850_C": 10.7,
-        "Td700_C": -5.2,
-        "depresion_850": 4.7,
-        "depresion_700": 12.6
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          39.75
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 14.4,
-        "T700_C": 7.1,
-        "T500_C": -10.0,
-        "HR850": 79.0,
-        "HR700": 43.0,
-        "Td850_C": 10.7,
-        "Td700_C": -4.7,
-        "depresion_850": 3.6,
-        "depresion_700": 11.7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.5,
-          39.75
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 13.8,
-        "T700_C": 7.1,
-        "T500_C": -10.1,
-        "HR850": 81.0,
-        "HR700": 46.0,
-        "Td850_C": 10.6,
-        "Td700_C": -3.8,
-        "depresion_850": 3.2,
-        "depresion_700": 10.8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.25,
-          39.75
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 14.5,
-        "T700_C": 6.9,
-        "T500_C": -10.1,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.4,
+        "T700_C": 6.3,
+        "T500_C": -11.0,
         "HR850": 71.0,
-        "HR700": 52.0,
-        "Td850_C": 9.4,
-        "Td700_C": -2.2,
-        "depresion_850": 5.1,
-        "depresion_700": 9.1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.25,
-          39.5
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.6,
-        "T700_C": 7.5,
-        "T500_C": -9.9,
-        "HR850": 72.0,
-        "HR700": 40.0,
-        "Td850_C": 11.5,
-        "Td700_C": -5.3,
-        "depresion_850": 5.1,
-        "depresion_700": 12.7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.0,
-          39.5
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 2,
-        "alto_B_sequedad": 1,
-        "T850_C": 15.3,
-        "T700_C": 7.1,
-        "T500_C": -10.0,
-        "HR850": 70.0,
-        "HR700": 46.0,
-        "Td850_C": 9.9,
-        "Td700_C": -3.8,
-        "depresion_850": 5.4,
-        "depresion_700": 10.8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          39.5
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 14.9,
-        "T700_C": 6.8,
-        "T500_C": -9.9,
-        "HR850": 67.0,
-        "HR700": 57.0,
-        "Td850_C": 8.9,
-        "Td700_C": -1.2,
-        "depresion_850": 6.0,
-        "depresion_700": 7.9
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.5,
-          39.5
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 15.4,
-        "T700_C": 6.7,
-        "T500_C": -9.8,
-        "HR850": 65.0,
-        "HR700": 68.0,
-        "Td850_C": 8.9,
-        "Td700_C": 1.2,
-        "depresion_850": 6.5,
-        "depresion_700": 5.5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.0,
-          39.25
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.6,
-        "T700_C": 6.8,
-        "T500_C": -9.7,
-        "HR850": 64.0,
-        "HR700": 61.0,
-        "Td850_C": 9.7,
-        "Td700_C": -0.2,
-        "depresion_850": 6.9,
-        "depresion_700": 7.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          39.25
-        ]
-      },
-      "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.7,
-        "T700_C": 6.6,
-        "T500_C": -9.6,
-        "HR850": 56.0,
-        "HR700": 75.0,
-        "Td850_C": 7.9,
-        "Td700_C": 2.5,
-        "depresion_850": 8.8,
-        "depresion_700": 4.1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.5,
-          39.25
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.6,
-        "T700_C": 6.7,
-        "T500_C": -9.5,
-        "HR850": 60.0,
-        "HR700": 77.0,
-        "Td850_C": 8.8,
-        "Td700_C": 3.1,
-        "depresion_850": 7.9,
-        "depresion_700": 3.7
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.0,
-          39.0
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.9,
-        "T700_C": 7.0,
-        "T500_C": -9.3,
-        "HR850": 70.0,
-        "HR700": 70.0,
-        "Td850_C": 11.5,
-        "Td700_C": 2.0,
-        "depresion_850": 5.5,
-        "depresion_700": 5.0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          39.0
-        ]
-      },
-      "properties": {
-        "haines": 4,
-        "nivel": "Moderado",
-        "color": "#abdda4",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 4,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#abdda4",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.6,
-        "T700_C": 6.8,
-        "T500_C": -9.2,
-        "HR850": 71.0,
-        "HR700": 74.0,
-        "Td850_C": 11.3,
-        "Td700_C": 2.5,
+        "HR700": 31.0,
+        "Td850_C": 8.2,
+        "Td700_C": -9.6,
         "depresion_850": 5.3,
-        "depresion_700": 4.3
+        "depresion_700": 15.9
       }
     },
     {
@@ -968,8 +80,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.5,
-          39.0
+          0.25,
+          40.5
         ]
       },
       "properties": {
@@ -984,20 +96,20 @@
         "haines_medio_color": "#2b83ba",
         "medio_A_estabilidad": 2,
         "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.4,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 12.7,
         "T700_C": 6.9,
-        "T500_C": -9.1,
-        "HR850": 77.0,
-        "HR700": 72.0,
-        "Td850_C": 12.3,
-        "Td700_C": 2.3,
-        "depresion_850": 4.1,
-        "depresion_700": 4.6
+        "T500_C": -11.4,
+        "HR850": 76.0,
+        "HR700": 21.0,
+        "Td850_C": 8.5,
+        "Td700_C": -13.9,
+        "depresion_850": 4.2,
+        "depresion_700": 20.9
       }
     },
     {
@@ -1005,110 +117,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.25,
-          39.0
+          0.5,
+          40.5
         ]
       },
       "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
         "haines_bajo": null,
         "haines_bajo_nivel": "No disponible",
         "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
         "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.9,
-        "T700_C": 6.8,
-        "T500_C": -9.1,
-        "HR850": 68.0,
-        "HR700": 76.0,
-        "Td850_C": 10.9,
-        "Td700_C": 2.9,
-        "depresion_850": 6.0,
-        "depresion_700": 3.9
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.75,
-          38.75
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 16.0,
-        "T700_C": 7.3,
-        "T500_C": -8.8,
-        "HR850": 85.0,
-        "HR700": 63.0,
-        "Td850_C": 13.5,
-        "Td700_C": 0.8,
-        "depresion_850": 2.6,
-        "depresion_700": 6.5
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.5,
-          38.75
-        ]
-      },
-      "properties": {
-        "haines": 3,
-        "nivel": "Bajo",
-        "color": "#2b83ba",
-        "haines_bajo": null,
-        "haines_bajo_nivel": "No disponible",
-        "haines_bajo_color": "#999999",
-        "haines_medio": 3,
-        "haines_medio_nivel": "Bajo",
-        "haines_medio_color": "#2b83ba",
-        "medio_A_estabilidad": 2,
-        "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 15.8,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 12.1,
         "T700_C": 7.2,
-        "T500_C": -8.8,
-        "HR850": 93.0,
-        "HR700": 64.0,
-        "Td850_C": 14.6,
-        "Td700_C": 1.0,
-        "depresion_850": 1.2,
-        "depresion_700": 6.3
+        "T500_C": -11.6,
+        "HR850": 70.0,
+        "HR700": 18.0,
+        "Td850_C": 6.7,
+        "Td700_C": -15.2,
+        "depresion_850": 5.4,
+        "depresion_700": 22.4
       }
     },
     {
@@ -1117,7 +155,7 @@
         "type": "Point",
         "coordinates": [
           -0.25,
-          38.75
+          40.25
         ]
       },
       "properties": {
@@ -1132,20 +170,20 @@
         "haines_medio_color": "#2b83ba",
         "medio_A_estabilidad": 2,
         "medio_B_sequedad": 1,
-        "haines_alto": 2,
+        "haines_alto": 3,
         "haines_alto_nivel": "Bajo",
         "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
+        "alto_A_estabilidad": 2,
         "alto_B_sequedad": 1,
-        "T850_C": 16.9,
-        "T700_C": 7.0,
-        "T500_C": -8.6,
-        "HR850": 75.0,
-        "HR700": 70.0,
-        "Td850_C": 12.4,
-        "Td700_C": 1.9,
-        "depresion_850": 4.5,
-        "depresion_700": 5.1
+        "T850_C": 12.8,
+        "T700_C": 6.9,
+        "T500_C": -10.9,
+        "HR850": 87.0,
+        "HR700": 47.0,
+        "Td850_C": 10.7,
+        "Td700_C": -3.5,
+        "depresion_850": 2.1,
+        "depresion_700": 10.4
       }
     },
     {
@@ -1154,35 +192,35 @@
         "type": "Point",
         "coordinates": [
           0.0,
-          38.75
+          40.25
         ]
       },
       "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
+        "haines": 2,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
         "haines_bajo": null,
         "haines_bajo_nivel": "No disponible",
         "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 17.8,
-        "T700_C": 7.1,
-        "T500_C": -8.5,
-        "HR850": 54.0,
-        "HR700": 68.0,
-        "Td850_C": 8.3,
-        "Td700_C": 1.6,
-        "depresion_850": 9.5,
-        "depresion_700": 5.5
+        "haines_medio": 2,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 12.5,
+        "T700_C": 7.9,
+        "T500_C": -11.4,
+        "HR850": 84.0,
+        "HR700": 29.0,
+        "Td850_C": 9.9,
+        "Td700_C": -9.0,
+        "depresion_850": 2.6,
+        "depresion_700": 17.0
       }
     },
     {
@@ -1190,8 +228,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.0,
-          38.5
+          0.25,
+          40.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 12.6,
+        "T700_C": 7.6,
+        "T500_C": -11.4,
+        "HR850": 75.0,
+        "HR700": 22.0,
+        "Td850_C": 8.3,
+        "Td700_C": -12.8,
+        "depresion_850": 4.3,
+        "depresion_700": 20.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          40.0
         ]
       },
       "properties": {
@@ -1212,14 +287,939 @@
         "alto_A_estabilidad": 1,
         "alto_B_sequedad": 1,
         "T850_C": 17.4,
-        "T700_C": 7.4,
-        "T500_C": -8.5,
-        "HR850": 69.0,
-        "HR700": 60.0,
+        "T700_C": 6.1,
+        "T500_C": -10.6,
+        "HR850": 61.0,
+        "HR700": 64.0,
+        "Td850_C": 9.8,
+        "Td700_C": -0.2,
+        "depresion_850": 7.6,
+        "depresion_700": 6.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 4,
+        "nivel": "Moderado",
+        "color": "#abdda4",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 4,
+        "haines_medio_nivel": "Moderado",
+        "haines_medio_color": "#abdda4",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 2,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 15.9,
+        "T700_C": 6.6,
+        "T500_C": -10.7,
+        "HR850": 72.0,
+        "HR700": 59.0,
+        "Td850_C": 10.7,
+        "Td700_C": -0.8,
+        "depresion_850": 5.1,
+        "depresion_700": 7.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 13.1,
+        "T700_C": 7.1,
+        "T500_C": -10.8,
+        "HR850": 91.0,
+        "HR700": 48.0,
         "Td850_C": 11.6,
-        "Td700_C": 0.2,
+        "Td700_C": -3.1,
+        "depresion_850": 1.4,
+        "depresion_700": 10.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 2,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 2,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 11.9,
+        "T700_C": 7.6,
+        "T500_C": -11.0,
+        "HR850": 96.0,
+        "HR700": 40.0,
+        "Td850_C": 11.2,
+        "Td700_C": -5.2,
+        "depresion_850": 0.7,
+        "depresion_700": 12.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 12.9,
+        "T700_C": 7.5,
+        "T500_C": -11.1,
+        "HR850": 79.0,
+        "HR700": 37.0,
+        "Td850_C": 9.3,
+        "Td700_C": -6.3,
+        "depresion_850": 3.6,
+        "depresion_700": 13.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 4,
+        "nivel": "Moderado",
+        "color": "#abdda4",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 4,
+        "haines_medio_nivel": "Moderado",
+        "haines_medio_color": "#abdda4",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 2,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 16.1,
+        "T700_C": 7.4,
+        "T500_C": -10.5,
+        "HR850": 69.0,
+        "HR700": 43.0,
+        "Td850_C": 10.3,
+        "Td700_C": -4.4,
         "depresion_850": 5.8,
-        "depresion_700": 7.1
+        "depresion_700": 11.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 14.2,
+        "T700_C": 7.6,
+        "T500_C": -10.5,
+        "HR850": 82.0,
+        "HR700": 40.0,
+        "Td850_C": 11.1,
+        "Td700_C": -5.2,
+        "depresion_850": 3.1,
+        "depresion_700": 12.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 13.3,
+        "T700_C": 7.7,
+        "T500_C": -10.8,
+        "HR850": 86.0,
+        "HR700": 37.0,
+        "Td850_C": 11.0,
+        "Td700_C": -6.1,
+        "depresion_850": 2.3,
+        "depresion_700": 13.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 12.8,
+        "T700_C": 7.6,
+        "T500_C": -10.9,
+        "HR850": 88.0,
+        "HR700": 38.0,
+        "Td850_C": 10.8,
+        "Td700_C": -5.8,
+        "depresion_850": 1.9,
+        "depresion_700": 13.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          39.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 3,
+        "haines_alto_nivel": "Bajo",
+        "haines_alto_color": "#2b83ba",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 1,
+        "T850_C": 13.1,
+        "T700_C": 7.2,
+        "T500_C": -10.8,
+        "HR850": 83.0,
+        "HR700": 40.0,
+        "Td850_C": 10.2,
+        "Td700_C": -5.4,
+        "depresion_850": 2.9,
+        "depresion_700": 12.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 15.5,
+        "T700_C": 8.2,
+        "T500_C": -10.5,
+        "HR850": 74.0,
+        "HR700": 25.0,
+        "Td850_C": 10.7,
+        "Td700_C": -10.4,
+        "depresion_850": 4.7,
+        "depresion_700": 18.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.5,
+        "T700_C": 8.3,
+        "T500_C": -10.5,
+        "HR850": 86.0,
+        "HR700": 26.0,
+        "Td850_C": 11.2,
+        "Td700_C": -10.1,
+        "depresion_850": 2.3,
+        "depresion_700": 18.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.2,
+        "T700_C": 8.0,
+        "T500_C": -10.5,
+        "HR850": 84.0,
+        "HR700": 26.0,
+        "Td850_C": 10.5,
+        "Td700_C": -10.3,
+        "depresion_850": 2.7,
+        "depresion_700": 18.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.6,
+        "T700_C": 7.7,
+        "T500_C": -10.6,
+        "HR850": 77.0,
+        "HR700": 29.0,
+        "Td850_C": 9.7,
+        "Td700_C": -9.0,
+        "depresion_850": 4.0,
+        "depresion_700": 16.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 2,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 2,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.5,
+        "T700_C": 8.6,
+        "T500_C": -10.5,
+        "HR850": 85.0,
+        "HR700": 22.0,
+        "Td850_C": 11.0,
+        "Td700_C": -12.0,
+        "depresion_850": 2.5,
+        "depresion_700": 20.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.7,
+        "T700_C": 8.2,
+        "T500_C": -10.4,
+        "HR850": 79.0,
+        "HR700": 22.0,
+        "Td850_C": 10.1,
+        "Td700_C": -12.0,
+        "depresion_850": 3.7,
+        "depresion_700": 20.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.25
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.7,
+        "T700_C": 7.9,
+        "T500_C": -10.4,
+        "HR850": 78.0,
+        "HR700": 24.0,
+        "Td850_C": 9.9,
+        "Td700_C": -11.5,
+        "depresion_850": 3.8,
+        "depresion_700": 19.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 2,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 2,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.4,
+        "T700_C": 8.6,
+        "T500_C": -10.5,
+        "HR850": 90.0,
+        "HR700": 21.0,
+        "Td850_C": 11.7,
+        "Td700_C": -12.3,
+        "depresion_850": 1.7,
+        "depresion_700": 20.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.3,
+        "T700_C": 8.1,
+        "T500_C": -10.5,
+        "HR850": 87.0,
+        "HR700": 21.0,
+        "Td850_C": 11.2,
+        "Td700_C": -12.7,
+        "depresion_850": 2.1,
+        "depresion_700": 20.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.5,
+        "T700_C": 8.0,
+        "T500_C": -10.5,
+        "HR850": 88.0,
+        "HR700": 22.0,
+        "Td850_C": 11.5,
+        "Td700_C": -12.2,
+        "depresion_850": 2.0,
+        "depresion_700": 20.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          39.0
+        ]
+      },
+      "properties": {
+        "haines": 2,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 2,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 1,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 12.9,
+        "T700_C": 8.1,
+        "T500_C": -10.5,
+        "HR850": 93.0,
+        "HR700": 21.0,
+        "Td850_C": 11.8,
+        "Td700_C": -12.9,
+        "depresion_850": 1.1,
+        "depresion_700": 21.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.75,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.6,
+        "T700_C": 8.0,
+        "T500_C": -10.5,
+        "HR850": 93.0,
+        "HR700": 23.0,
+        "Td850_C": 12.5,
+        "Td700_C": -11.6,
+        "depresion_850": 1.1,
+        "depresion_700": 19.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.6,
+        "T700_C": 8.2,
+        "T500_C": -10.6,
+        "HR850": 95.0,
+        "HR700": 21.0,
+        "Td850_C": 12.9,
+        "Td700_C": -12.6,
+        "depresion_850": 0.8,
+        "depresion_700": 20.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 5,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#fdae61",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 3,
+        "T850_C": 13.3,
+        "T700_C": 8.2,
+        "T500_C": -10.6,
+        "HR850": 94.0,
+        "HR700": 22.0,
+        "Td850_C": 12.4,
+        "Td700_C": -12.0,
+        "depresion_850": 0.9,
+        "depresion_700": 20.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          38.75
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 13.5,
+        "T700_C": 7.7,
+        "T500_C": -10.4,
+        "HR850": 85.0,
+        "HR700": 27.0,
+        "Td850_C": 10.9,
+        "Td700_C": -9.9,
+        "depresion_850": 2.6,
+        "depresion_700": 17.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0,
+          38.5
+        ]
+      },
+      "properties": {
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
+        "haines_bajo": null,
+        "haines_bajo_nivel": "No disponible",
+        "haines_bajo_color": "#999999",
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 14.8,
+        "T700_C": 8.3,
+        "T500_C": -10.4,
+        "HR850": 86.0,
+        "HR700": 26.0,
+        "Td850_C": 12.5,
+        "Td700_C": -10.1,
+        "depresion_850": 2.3,
+        "depresion_700": 18.4
       }
     },
     {
@@ -1243,20 +1243,20 @@
         "haines_medio_color": "#2b83ba",
         "medio_A_estabilidad": 2,
         "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 17.0,
-        "T700_C": 7.5,
-        "T500_C": -8.5,
-        "HR850": 77.0,
-        "HR700": 55.0,
-        "Td850_C": 13.0,
-        "Td700_C": -1.0,
-        "depresion_850": 4.0,
-        "depresion_700": 8.5
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 14.2,
+        "T700_C": 8.0,
+        "T500_C": -10.4,
+        "HR850": 93.0,
+        "HR700": 24.0,
+        "Td850_C": 13.1,
+        "Td700_C": -11.4,
+        "depresion_850": 1.1,
+        "depresion_700": 19.4
       }
     },
     {
@@ -1280,20 +1280,20 @@
         "haines_medio_color": "#2b83ba",
         "medio_A_estabilidad": 2,
         "medio_B_sequedad": 1,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 17.0,
-        "T700_C": 7.5,
-        "T500_C": -8.5,
-        "HR850": 78.0,
-        "HR700": 55.0,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 14.0,
+        "T700_C": 7.9,
+        "T500_C": -10.4,
+        "HR850": 95.0,
+        "HR700": 25.0,
         "Td850_C": 13.1,
-        "Td700_C": -0.9,
-        "depresion_850": 3.9,
-        "depresion_700": 8.5
+        "Td700_C": -10.9,
+        "depresion_850": 0.9,
+        "depresion_700": 18.8
       }
     },
     {
@@ -1306,31 +1306,31 @@
         ]
       },
       "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
         "haines_bajo": null,
         "haines_bajo_nivel": "No disponible",
         "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 17.7,
-        "T700_C": 7.4,
-        "T500_C": -8.4,
-        "HR850": 61.0,
-        "HR700": 60.0,
-        "Td850_C": 10.1,
-        "Td700_C": 0.1,
-        "depresion_850": 7.6,
-        "depresion_700": 7.3
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 14.0,
+        "T700_C": 7.7,
+        "T500_C": -10.4,
+        "HR850": 88.0,
+        "HR700": 29.0,
+        "Td850_C": 12.1,
+        "Td700_C": -9.3,
+        "depresion_850": 2.0,
+        "depresion_700": 16.9
       }
     },
     {
@@ -1343,31 +1343,31 @@
         ]
       },
       "properties": {
-        "haines": 5,
-        "nivel": "Moderado",
-        "color": "#fdae61",
+        "haines": 3,
+        "nivel": "Bajo",
+        "color": "#2b83ba",
         "haines_bajo": null,
         "haines_bajo_nivel": "No disponible",
         "haines_bajo_color": "#999999",
-        "haines_medio": 5,
-        "haines_medio_nivel": "Moderado",
-        "haines_medio_color": "#fdae61",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 2,
-        "haines_alto": 2,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
-        "alto_B_sequedad": 1,
-        "T850_C": 18.2,
-        "T700_C": 7.7,
-        "T500_C": -8.1,
-        "HR850": 56.0,
-        "HR700": 47.0,
-        "Td850_C": 9.2,
-        "Td700_C": -3.0,
-        "depresion_850": 9.0,
-        "depresion_700": 10.6
+        "haines_medio": 3,
+        "haines_medio_nivel": "Bajo",
+        "haines_medio_color": "#2b83ba",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 1,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
+        "alto_B_sequedad": 2,
+        "T850_C": 15.2,
+        "T700_C": 7.6,
+        "T500_C": -10.0,
+        "HR850": 81.0,
+        "HR700": 30.0,
+        "Td850_C": 11.9,
+        "Td700_C": -8.9,
+        "depresion_850": 3.3,
+        "depresion_700": 16.5
       }
     },
     {
@@ -1380,31 +1380,31 @@
         ]
       },
       "properties": {
-        "haines": 6,
-        "nivel": "Alto",
-        "color": "#d7191c",
+        "haines": 4,
+        "nivel": "Moderado",
+        "color": "#abdda4",
         "haines_bajo": null,
         "haines_bajo_nivel": "No disponible",
         "haines_bajo_color": "#999999",
-        "haines_medio": 6,
-        "haines_medio_nivel": "Alto",
-        "haines_medio_color": "#d7191c",
-        "medio_A_estabilidad": 3,
-        "medio_B_sequedad": 3,
-        "haines_alto": 3,
-        "haines_alto_nivel": "Bajo",
-        "haines_alto_color": "#2b83ba",
-        "alto_A_estabilidad": 1,
+        "haines_medio": 4,
+        "haines_medio_nivel": "Moderado",
+        "haines_medio_color": "#abdda4",
+        "medio_A_estabilidad": 2,
+        "medio_B_sequedad": 2,
+        "haines_alto": 4,
+        "haines_alto_nivel": "Moderado",
+        "haines_alto_color": "#abdda4",
+        "alto_A_estabilidad": 2,
         "alto_B_sequedad": 2,
-        "T850_C": 18.8,
-        "T700_C": 8.2,
-        "T500_C": -7.9,
-        "HR850": 45.0,
-        "HR700": 34.0,
-        "Td850_C": 6.7,
-        "Td700_C": -6.7,
-        "depresion_850": 12.1,
-        "depresion_700": 14.9
+        "T850_C": 17.0,
+        "T700_C": 7.6,
+        "T500_C": -9.7,
+        "HR850": 59.0,
+        "HR700": 33.0,
+        "Td850_C": 8.8,
+        "Td700_C": -7.5,
+        "depresion_850": 8.2,
+        "depresion_700": 15.1
       }
     }
   ]
